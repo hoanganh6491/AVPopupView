@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AVPopupView" customModule="AVPopupView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ky-RC-yQ6" userLabel="View - contentView">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8k-i7-7eV">
+                            <rect key="frame" x="8" y="244" width="384" height="48"/>
+                            <color key="backgroundColor" red="1" green="0.4297571174" blue="0.39372767730000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="cXb-9i-Rj8"/>
+                            </constraints>
+                            <state key="normal" title="Dismiss">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnDismissDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="3Uv-bG-Gho"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Popup View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnN-oq-PBU">
+                            <rect key="frame" x="8" y="8" width="384" height="74"/>
+                            <color key="backgroundColor" red="0.87411132550000004" green="0.97439236110000005" blue="0.91179802249999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="74" id="0Df-Hp-eOz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="A8k-i7-7eV" secondAttribute="bottom" constant="8" id="124-ft-pnD"/>
+                        <constraint firstAttribute="width" constant="400" id="InI-kE-Lmt"/>
+                        <constraint firstItem="QnN-oq-PBU" firstAttribute="top" secondItem="6Ky-RC-yQ6" secondAttribute="top" constant="8" id="OwU-4L-Cwz"/>
+                        <constraint firstAttribute="trailing" secondItem="QnN-oq-PBU" secondAttribute="trailing" constant="8" id="QXn-6N-G7V"/>
+                        <constraint firstItem="A8k-i7-7eV" firstAttribute="leading" secondItem="6Ky-RC-yQ6" secondAttribute="leading" constant="8" id="X5g-eg-bVx"/>
+                        <constraint firstAttribute="height" constant="300" id="ari-gF-bF4"/>
+                        <constraint firstItem="QnN-oq-PBU" firstAttribute="leading" secondItem="6Ky-RC-yQ6" secondAttribute="leading" constant="8" id="jgn-0A-0vJ"/>
+                        <constraint firstAttribute="trailing" secondItem="A8k-i7-7eV" secondAttribute="trailing" constant="8" id="peg-dQ-aZZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6Ky-RC-yQ6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BVy-Wb-MMc"/>
+                <constraint firstItem="6Ky-RC-yQ6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cwo-P8-mtX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnDismiss" destination="A8k-i7-7eV" id="qgJ-7Q-kjV"/>
+                <outlet property="viewContentView" destination="6Ky-RC-yQ6" id="rcy-tE-pmR"/>
+            </connections>
+        </view>
+    </objects>
+</document>
